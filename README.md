@@ -1,5 +1,4 @@
-# NoOps Hello-World
-
+# NoOps
 ## Prerequisites 
 
 - Libssl `sudo apt install libssl-dev`
@@ -16,21 +15,25 @@
 - Cargo WebAssembly Compile Target <br>
 `rustup target add wasm32-wasi`
 
+## CLI Commands
+
+- noops 
+
 ## Hello-World
 
-1. Initialize your Project <br>`noops init`
-    [![demo](./tutorials/init_to_deploy/gifs/init.gif)](./tutorials/init_to_deploy/gifs/init.gif)
-2. Login into the NoOps Cloud <br>`noops login`
-3. Add your first function <br>`noops create FUNCTION_NAME`
-    [![demo](./tutorials/init_to_deploy/gifs/create.gif)](./tutorials/init_to_deploy/gifs/create.gif)
+1. Initialize your Project -- `noops init`
+    [![init](./tutorials/init_to_deploy/gifs/init.gif)](./tutorials/init_to_deploy/gifs/init.gif)
+2. Login into the NoOps Cloud `noops login`
+3. Add your first function -- `noops create FUNCTION_NAME`
+    [![create](./tutorials/init_to_deploy/gifs/create.gif)](./tutorials/init_to_deploy/gifs/create.gif)
 4. The source code is created at ./YOUR_FUNCTION_NAME
-5. Build the functions <br> `noops build`
+5. Build the functions -- `noops build`
 FUNCTION_NAME`
-    [![demo](./tutorials/init_to_deploy/gifs/build.gif)](./tutorials/init_to_deploy/gifs/build.gif)
-6. Upload the project <br> `noops deploy`
+    [![build](./tutorials/init_to_deploy/gifs/build.gif)](./tutorials/init_to_deploy/gifs/build.gif)
+6. Upload the project -- `noops deploy`
 FUNCTION_NAME`
-    [![demo](./tutorials/init_to_deploy/gifs/deploy.gif)](./tutorials/init_to_deploy/gifs/deploy.gif)
-7. Curl your functions with the supplied links, or use the browser <br> `curl YOUR_FUNCTION_LINK`
+    [![deploy](./tutorials/init_to_deploy/gifs/deploy.gif)](./tutorials/init_to_deploy/gifs/deploy.gif)
+7. Curl your functions with the supplied links, or use the browser -- `curl YOUR_FUNCTION_LINK`
 FUNCTION_NAME`
-    [![demo](./tutorials/init_to_deploy/gifs/call.gif)](./tutorials/init_to_deploy/gifs/call.gif)
+    [![call](./tutorials/init_to_deploy/gifs/call.gif)](./tutorials/init_to_deploy/gifs/call.gif)
 
