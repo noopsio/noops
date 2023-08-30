@@ -1,0 +1,31 @@
+settings:
+  title: noops project deploy
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Command
+    command: noops show rust_hello_world   
+  - !Wait 2s
+  - !Command
+    command: "# We can see that the function is successfully deployed"
+  - !Command
+    command: "# Lets call the link to execute it"    
+  - !Wait 2s
+  - !Command
+    command: curl https://noops.onrender.com/Sv-_zvKM3uqk5A-fgf47S
+  - !Wait 1s
+  - !Command
+    command: "# We can see that the function successfully executed!"
+  - !Command
+    command: "# All that without interacting with a single server"
+  - !Command
+    command: "# Welcome to NoOps!"         
+  - !Command
+    command: "# Thanks for watching!"
+  - !Command
+    command: "# Make sure to check out our GitHub and leave a star."
+ 
+
+  

@@ -1,0 +1,52 @@
+settings:
+  title: noops project create
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Command
+    command: noops show    
+  - !Wait 2s
+  - !Command
+    command: "# Lets add the component"
+  - !Command
+    command: "# We work with component Templates."
+  - !Command
+    command: "# Templates contain boilerplate code for often used components."  
+  - !Command
+    command: "# We offer two hello-world Templates for this demo. Golang and Rust" 
+  - !Command
+    command: "# Therefore you are able to combine both languages in one application"   
+  - !Command
+    command: "# Lets create a Rust component and name it 'rust_hello_world'"
+  - !Wait 2s
+  - !Interactive
+    command: noops create rust_hello_world  
+    keys:
+      - 1s    
+      - !Control m
+  - !Wait 2s
+  - !Command
+    command: "# Lets check the status"  
+  - !Command
+    command: noops show
+  - !Wait 2s
+  - !Command
+    command: "# We can see that the function was added to the project!"
+  - !Command
+    command: "# I will quickly add a Golang function"
+  - !Wait 1s
+  - !Interactive
+    command: noops create go_hello_world  
+    keys:
+      - 1s
+      - !Control i     
+      - 1s
+      - !Control m
+  - !Wait 2s
+  - !Command
+    command: noops show
+  - !Wait 2s
+  - !Command
+    command: "# Lets build the project it in the next step!"           

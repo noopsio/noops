@@ -1,0 +1,29 @@
+settings:
+  title: noops project create
+
+instructions:
+  - !Command
+    command: mkdir demo && cd demo
+    hidden: true
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Command
+    command: "# Welcome to our Demo"     
+  - !Command
+    command: "# Thank you for your interest!"     
+
+  - !Command
+    command: "# Lets initialize our project."  
+  - !Command 
+    command: noops init demo
+  - !Wait 2s
+  - !Command
+    command: "# We've now created our project. Lets check it out!"  
+  - !Wait 1s
+  - !Command 
+    command: noops show
+  - !Command
+    command: "# Ok theres not much to see yet."    
+  - !Command
+    command: "# Lets add a component in the next step!"

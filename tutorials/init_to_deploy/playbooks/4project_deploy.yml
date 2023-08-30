@@ -1,0 +1,30 @@
+settings:
+  title: noops project deploy
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Command
+    command: noops show    
+  - !Wait 2s
+  - !Command
+    command: "# Lets deploy the project"
+  - !Interactive
+    command: "noops deploy"
+    keys:
+      - 2s
+      - y
+      - !Control m
+  - !Wait 2s  
+  - !Command
+    command: noops show
+  - !Wait 2s
+  - !Command
+    command: "# Successfully deployed"
+  - !Command
+    command: "# Lets test the application in the final step!"    
+  - !Wait 2s
+
+
+  

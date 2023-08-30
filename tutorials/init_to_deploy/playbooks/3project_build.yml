@@ -1,0 +1,25 @@
+settings:
+  title: noops project build
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Command
+    command: noops show    
+  - !Wait 2s
+  - !Command
+    command: "# Lets build the project"
+  - !Command
+    command: "noops build"
+  - !Wait 2s
+  - !Command
+    command: "# Success. That was fast!"      
+  - !Command
+    command: noops show
+  - !Wait 2s
+  - !Command
+    command: "# We can see that both functions were successfully built!"
+  - !Command
+    command: "# Lets deploy in the next step!"    
+  
