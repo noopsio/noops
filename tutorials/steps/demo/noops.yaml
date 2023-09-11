@@ -1,0 +1,4 @@
+project: demo
+functions:
+- name: rust_hello_world
+  language: rust

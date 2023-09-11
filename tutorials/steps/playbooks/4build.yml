@@ -1,0 +1,12 @@
+settings:
+  title: noops project build
+  width: 50
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Command
+    command: "noops build"
+  
+  

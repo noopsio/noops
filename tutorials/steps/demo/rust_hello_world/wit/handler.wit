@@ -1,0 +1,13 @@
+default world handler {
+
+    record request {
+        query-params: list<tuple<string, string>>
+    }
+
+    record response {
+        status: u16,
+        body: string
+    }
+
+    export handle: func(req: request) -> response
+}

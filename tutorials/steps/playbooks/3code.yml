@@ -1,0 +1,34 @@
+settings:
+  title: noops code
+  width: 50
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+
+  - !Interactive
+    command: vim rust_hello_world/src/lib.rs
+    keys:
+      - ':'
+      - !Char 1
+      - !Char 1
+      - 1s
+      - !Control m
+      - f
+      - R
+      - 1s
+      - c
+      - w
+      - 1s
+      - N
+      - o
+      - O
+      - p
+      - s
+      - 1s
+      - ^[
+      - ':'
+      - w
+      - q
+      - !Control m

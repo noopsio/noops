@@ -1,0 +1,18 @@
+settings:
+  title: noops deploy
+  width: 50
+
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Interactive
+    command: "noops deploy"
+    keys:
+      - 2s
+      - y
+      - !Control m
+
+
+  

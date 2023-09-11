@@ -1,0 +1,15 @@
+settings:
+  title: noops project create
+  width: 50
+
+instructions:
+  - !Command
+    command: mkdir demo && cd demo
+    hidden: true
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Command 
+    command: noops init demo
+
+

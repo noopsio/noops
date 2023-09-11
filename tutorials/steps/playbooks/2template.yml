@@ -1,0 +1,18 @@
+settings:
+  title: noops create rust_hello_world
+  width: 50
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Interactive
+    command: noops create rust_hello_world  
+    keys:
+      - 1s
+      - j
+      - 750ms
+      - k    
+      - 1s
+      - !Control m
+  

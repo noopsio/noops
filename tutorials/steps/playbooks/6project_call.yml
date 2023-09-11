@@ -1,0 +1,19 @@
+settings:
+  title: noops project deploy
+  width: 50
+
+
+instructions:
+  - !Command
+    command: cd demo
+    hidden: true
+  - !Command
+    command: noops show
+  
+  - !Wait 2s
+
+  - !Command
+    command: curl https://noops.onrender.com/KUCpqk7jiHmB4eU95hW-m
+ 
+
+  
