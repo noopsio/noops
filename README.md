@@ -21,7 +21,10 @@ Noops is a new approach to serverless application development.
 When initializing the project, a *noops.yaml* file is created. This is also called manifest and contains all project information.  
 The following command creates the project manifest with the name *demo*.
 ```
-[noops@demo]: noops init demo
+noops init demo
+```
+Output:
+```
 demo successfully initialized
 ```
 
@@ -31,15 +34,18 @@ project: demo
 handlers: []
 ```
 
-## Create 
- represents an HTTP handler of the project and can be configured individually. The strength of noops is that each handler can be written in a different programming language.
+## Create a handler
+A handler represents an HTTP handler of the project and can be configured individually. The strength of noops is that each handler can be written in a different programming language.
 
-:warning: Note: *The creation of handlers is simplified by templates. <br> Templates can be updated via `noops template update`.*
+:warning: Note: *The creation of handlers is simplified by templates.  
+Templates can be updated via `noops template update`.*
 
-The following command creates a new handler called *hello-rust* and lists all installed templates from which one can be selected interactively. As the chosen name for the handler suggests, let's select the *Rust Hello World* template.
-
+The following command creates a new handler called *hello-rust* and lists all installed templates from which one can be selected interactively. As the chosen name for the handler suggests, let's select the *Rust Hello World* template.  
 ```
-[noops@demo]: noops create hello-rust
+noops create hello-rust
+```
+Output:
+```
 --- Creating  ---
 Select a template:
 > Name:         Rust Hello World
@@ -82,7 +88,10 @@ hello-rust
 To build the project the following command is used.
 Alternatively, only a single handler can be built. In this case, the name of the handler is added as a parameter to the build command.
 ```
-[noops@demo]: noops build
+noops build
+```
+Output:
+```
 --- Building project ---
 [1/1] ✔️ hello-rust
 ```
@@ -111,12 +120,16 @@ The deployment process consists of matching the already uploaded handlers and cr
 
 If the deployment plan is approved, the project is deployed, the handlers are stored as endpoints and the routes are set up. 
 
-:warning: Note: *To deploy to the noops cloud, you must first login via `noops login`. This triggers a GitHub authentication.*
+:warning: Note: *To deploy to the noops cloud, you must first login via `noops login`.  
+This triggers a GitHub authentication.*
 
 The following command deploys the whole project.
 Alternatively, only one handler can be deployed by adding the name of the handler as a parameter to the deploy command.
 ```
-[noops@demo]: noops deploy
+noops deploy
+```
+Output:
+```
 --- Deploying project ---
 Changes:
         + hello-rust
@@ -126,7 +139,6 @@ Changes:
 ## Project status
 To get information about the project the following command is used. This can also be applied to a single handler by appending the handler name to the command.
 ```
-[noops@demo]: noops show
 --- Showing Project ---
 Name:           demo
 Deployed:       true
