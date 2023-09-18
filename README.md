@@ -34,12 +34,12 @@ handlers: []
 ## Create a handler
 A handler represents a HTTP handler of the project and can be configured individually. The strength of noops is that each handler can be written in a different programming language.
 
-:warning: Note: *The creation of the handler is simplified by templates. Templates can be updated via `noops template update`.*
+:warning: Note: *The creation of handlers is simplified by templates. Templates can be updated via `noops template update`.*
 
 The following command creates a new handler called *hello-rust* and lists all installed templates from which one can be selected interactively. As the chosen name for the handler suggests, lets select the *Rust Hello World* template.
 
 ```
- ./noops create hello-rust
+[noops@demo]: noops create hello-rust
 --- Creating a handler ---
 Select a template:
 > Name:         Rust Hello World
