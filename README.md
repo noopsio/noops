@@ -31,16 +31,16 @@ project: demo
 handlers: []
 ```
 
-## Create a handler
-A handler represents a HTTP handler of the project and can be configured individually. The strength of noops is that each handler can be written in a different programming language.
+## Create 
+ represents an HTTP handler of the project and can be configured individually. The strength of noops is that each handler can be written in a different programming language.
 
-:warning: Note: *The creation of handlers is simplified by templates. Templates can be updated via `noops template update`.*
+:warning: Note: *The creation of handlers is simplified by templates. <br> Templates can be updated via `noops template update`.*
 
-The following command creates a new handler called *hello-rust* and lists all installed templates from which one can be selected interactively. As the chosen name for the handler suggests, lets select the *Rust Hello World* template.
+The following command creates a new handler called *hello-rust* and lists all installed templates from which one can be selected interactively. As the chosen name for the handler suggests, let's select the *Rust Hello World* template.
 
 ```
 [noops@demo]: noops create hello-rust
---- Creating a handler ---
+--- Creating  ---
 Select a template:
 > Name:         Rust Hello World
   Description:  A Hello World function in Rust
@@ -80,7 +80,7 @@ hello-rust
 
 ## Build the project
 To build the project the following command is used.
-Alternatively, only a single handler can be built. In this case the name of the handler is added as a parameter to the build command.
+Alternatively, only a single handler can be built. In this case, the name of the handler is added as a parameter to the build command.
 ```
 [noops@demo]: noops build
 --- Building project ---
@@ -104,14 +104,14 @@ hello-rust
 ```
 
 ## Deploy the project
-The deployment process consists of matching the already uploaded handlers and creating a so called *deployment plan* which can consist of different deployment steps:
+The deployment process consists of matching the already uploaded handlers and creating a so-called *deployment plan* which can consist of different deployment steps:
 - new (+)
 - change (~)
 - delete (-)
 
 If the deployment plan is approved, the project is deployed, the handlers are stored as endpoints and the routes are set up. 
 
-:warning: Note: *To deploy to the noops cloud, you must first log in via `noops login`. This triggers a Github authentication.*
+:warning: Note: *To deploy to the noops cloud, you must first login via `noops login`. This triggers a GitHub authentication.*
 
 The following command deploys the whole project.
 Alternatively, only one handler can be deployed by adding the name of the handler as a parameter to the deploy command.
