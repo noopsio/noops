@@ -150,5 +150,14 @@ Build:          true
 Deployed:       true
 Link:           https://app.noops.rocks/rvRb1EP66VX_Nk-OhNnep
 ```
-Since the handler is deployed, a link to the endpoint is also provided. This can be used to call the endpoint.
+Since the handler is deployed, a link to the endpoint is also provided. This can be used to call the endpoint.  
+:warning: Note: *Do not forget to use the link that is displayed with your handler.*
+```
+curl https://app.noops.rocks/rvRb1EP66VX_Nk-OhNnep
+```
+Output:
+```
+Hello from Rust!
+```
+
 
