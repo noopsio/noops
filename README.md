@@ -25,6 +25,9 @@ We would be very happy, if you'd drop your feedback via issues or join our Disco
 
 
 ## Prerequisites 
+### NoOps Binary
+- Download binary from [releases](https://github.com/noopsio/noops/releases)
+  
 ### Dependencies
 - openssl
 
