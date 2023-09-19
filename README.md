@@ -26,7 +26,8 @@ We would be very happy, if you'd drop your feedback via issues or join our Disco
 
 ## Prerequisites 
 ### NoOps Binary
-- Download binary from [releases](https://github.com/noopsio/noops/releases)
+- Download binary from [releases](https://github.com/noopsio/noops/releases)   
+  ```wget https://github.com/noopsio/noops/releases/download/latest/noops```
   
 ### Dependencies
 - openssl
@@ -192,9 +193,6 @@ Hello from Rust!
 ## :warning: Help Us Improve :warning:
 
 Obviously, this is just a rudimentary aplha version of what we envision the cloud to be.
-
-However, we want to tailor the feature set to your needs.
-
 Please let us know what features you miss the most and we will make sure to implement them!
 
 Feel free to open an issue and get in touch with us!
