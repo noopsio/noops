@@ -37,8 +37,9 @@ handlers: []
 ## Create a handler
 A handler represents an HTTP handler of the project and can be configured individually. The strength of noops is that each handler can be written in a different programming language.
 
-:warning: Note: *The creation of handlers is simplified by templates.  
-Templates can be updated via `noops template update`.*
+> [!Note]  
+> The creation of handlers is simplified by templates.  
+> Templates can be updated via `noops template update`.
 
 The following command creates a new handler called *hello-rust* and lists all installed templates from which one can be selected interactively. As the chosen name for the handler suggests, let's select the *Rust Hello World* template.  
 ```
@@ -120,8 +121,9 @@ The deployment process consists of matching the already uploaded handlers and cr
 
 If the deployment plan is approved, the project is deployed, the handlers are stored as endpoints and the routes are set up. 
 
-:warning: Note: *To deploy to the noops cloud, you must first login via `noops login`.  
-This triggers a GitHub authentication.*
+> [!Note]  
+> To deploy to the noops cloud, you must first login via `noops login`.  
+> This triggers a GitHub authentication.
 
 The following command deploys the whole project.
 Alternatively, only one handler can be deployed by adding the name of the handler as a parameter to the deploy command.
@@ -151,7 +153,8 @@ Deployed:       true
 Link:           https://app.noops.rocks/rvRb1EP66VX_Nk-OhNnep
 ```
 Since the handler is deployed, a link to the endpoint is also provided. This can be used to call the endpoint.  
-:warning: Note: *Do not forget to use the link that is displayed with your handler.*
+> [!Note]  
+> Do not forget to use the link that is displayed with your handler.
 ```
 curl https://app.noops.rocks/rvRb1EP66VX_Nk-OhNnep
 ```
