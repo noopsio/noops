@@ -1,7 +1,7 @@
 <div align="center">
   <h1>NoOps</h1>
   <p>NoOps is a serverless cloud for building applications without the hassle of infrastructure management.</p>
-      <a href="https://discord.gg/6VNcm2Jx"><img alt="Discord" src="https://img.shields.io/discord/1153428628193943604
+      <a href="https://discord.gg/6VNcm2Jx"><img alt="Discord" src="https://img.shields.io/discord/1153428628193943604?label=Discord
 "></a>
 </div>
 
