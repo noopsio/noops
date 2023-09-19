@@ -1,5 +1,29 @@
-# Getting started
-Noops is a new approach to serverless application development. 
+<div align="center">
+  <h1>NoOps</h1>
+  <p>NoOps is a serverless cloud for building applications without the hassle of infrastructure management.</p>
+      <a href="https://discord.gg/6VNcm2Jx"><img alt="Discord" src="https://img.shields.io/discord/1153428628193943604
+"></a>
+</div>
+
+## Why should I try out NoOps?
+- Deploy with one line of code
+- No CI/CD Pipelines
+- No Docker Images
+- Multi language applications
+
+## Deploy Hello World in 30 seconds
+We wrote this tutorial to showcase the NoOps way of building applications. You will create an application with one endpoint that returns "Hello World". 
+
+This way you will familiarize yourself with our idea to split applications into handlers. These handlers are atomic and single purpose functions. These handlers execute based on triggers. So if you call the handlers endpoint, we execute it and return the result back to the caller. The figure below visualizes the idea.
+
+ [![build](./static/images/Flow.png)]()
+
+We do so by using WebAssembly and its [component model](https://github.com/WebAssembly/component-model). The component model allows us to combine different programming languages, like Golang and Rust, into the same application. We create these components by compiling the handlers to WebAssembly component binaries. These components define their interfaces with the [WebAssembly Interface Type](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) (WIT). By using these WIT definitions, Components can call other components functions. It will be possible to reuse components within the application. For example, you write a database controller that offers CRUD functions. Now, instead of rewriting the logic in every handler, you just import the controller component. 
+
+But for now, lets start our tutorial! 
+
+We would be very happy, if you'd drop your feedback via issues or join our Discord. 
+
 
 ## Prerequisites 
 ### Dependencies
@@ -17,7 +41,7 @@ Noops is a new approach to serverless application development.
 `rustup target add wasm32-wasi`
 
 
-##  Initialize a Project
+###  Initialize a Project
 When initializing the project, a *noops.yaml* file is created. This is also called manifest and contains all project information.  
 The following command creates the project manifest with the name *demo*.
 ```
@@ -34,7 +58,7 @@ project: demo
 handlers: []
 ```
 
-## Create a handler
+### Create a handler
 A handler represents an HTTP handler of the project and can be configured individually. The strength of noops is that each handler can be written in a different programming language.
 
 > [!Note]  
@@ -85,7 +109,7 @@ hello-rust
 ```
 
 
-## Build the project
+### Build the project
 To build the project the following command is used.
 Alternatively, only a single handler can be built. In this case, the name of the handler is added as a parameter to the build command.
 ```
@@ -113,7 +137,7 @@ hello-rust
    └── handler.wit
 ```
 
-## Deploy the project
+### Deploy the project
 The deployment process consists of matching the already uploaded handlers and creating a so-called *deployment plan* which can consist of different deployment steps:
 - new (+)
 - change (~)
@@ -138,7 +162,7 @@ Changes:
 [1/1] ✔️ Creating module hello-rust  
 ```
 
-## Project status
+### Project status
 To get information about the project the following command is used. This can also be applied to a single handler by appending the handler name to the command.
 ```
 --- Showing Project ---
@@ -163,4 +187,12 @@ Output:
 Hello from Rust!
 ```
 
+## :warning: Help Us Improve :warning:
 
+Obviously, this is just a rudimentary aplha version of what we envision the cloud to be.
+
+However, we want to tailor the feature set to your needs.
+
+Please let us know what features you miss the most and we will make sure to implement them!
+
+Feel free to open an issue and get in touch with us!
