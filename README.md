@@ -200,4 +200,4 @@ Hello from Rust!
 Obviously, this is just a rudimentary aplha version of what we envision the cloud to be.
 Please let us know what features you miss the most and we will make sure to implement them!
 
-Feel free to open an issue and get in touch with us!
+Feel free to open an issue and [get in touch](https://discord.gg/6VNcm2Jx) with us!
