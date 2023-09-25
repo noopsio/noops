@@ -164,6 +164,11 @@ Changes:
         + hello-rust
 [1/1] ✔️ Creating module hello-rust  
 ```
+> [!Note]  
+> To deploy and build at the same time the `--build` flag can be used.  
+> `noops deploy --build`
+
+
 
 ### Project status
 To get information about the project the following command is used. This can also be applied to a single handler by appending the handler name to the command.
